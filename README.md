@@ -1,49 +1,67 @@
-# Reinforcement Learning Results and Code Overview
+강화 학습 결과 및 코드 개요
 
-This repository contains the results and code for reinforcement learning experiments conducted in two environments: **MiniGrid-Empty-6x6** and **MiniGrid-Crossing**. The results are organized by task, and the repository structure is designed to make it easy to navigate between the different experimental outcomes and the corresponding code.
+이 저장소에는 MiniGrid-Empty-6x6과 MiniGrid-Crossing 두 환경에서 수행된 강화 학습 실험의 결과와 코드가 포함되어 있습니다. 결과는 각 작업(task)별로 정리되어 있으며, 저장소 구조는 다양한 실험 결과와 해당 코드를 쉽게 탐색할 수 있도록 설계되었습니다.
 
-## Repository Structure
+저장소 구조
 
-- **empty_6x6/**
-  - Contains results from experiments conducted in the **MiniGrid-Empty-6x6** environment.
-  - **Videos** of agent performances, **Q-values** after training, and **reward plots** for each experiment are provided.
-  - Reward plots are separated based on the number of episodes, allowing for comparison of agent learning over time.
+empty_6x6/
 
-- **crossing/**
-  - Contains results from experiments conducted in the **MiniGrid-Crossing** environment.
-  - Includes **videos** of the agent's performance, **Q-values** from training, and **reward plots**.
-  - Reward plots highlight comparisons between **different hyperparameters** and the **number of episodes** to showcase the optimal configuration for this environment.
+MiniGrid-Empty-6x6 환경에서 수행된 실험 결과가 포함되어 있습니다.
 
-- **code/**
-  - Contains the source code used for all the experiments.
-  - Separate Python scripts for each environment and experiment setup, including SARSA and Q-learning implementations.
+각 실험의 에이전트 수행 영상, 학습된 Q-값, 보상 그래프가 제공됩니다.
 
-## Contents Overview
+보상 그래프는 에피소드 수에 따라 나뉘어 있어 에이전트의 학습 경과를 비교할 수 있습니다.
 
-### Empty 6x6 Environment
-The **empty_6x6** folder includes visual and numerical results of reinforcement learning agents trained using different numbers of episodes. This allows for a detailed comparison of how the agents' performance evolves over time. You can find:
+crossing/
 
-- **Episode Reward Plots**: Graphs showing reward trends as episodes progress.
-- **Performance Videos**: Demonstrations of the agent's learned behavior.
-- **Q-Values**: The learned Q-values, which provide insights into the agent's decision-making process.
+MiniGrid-Crossing 환경에서 수행된 실험 결과가 포함되어 있습니다.
 
-### Crossing Environment
-The **crossing** folder presents the outcomes of reinforcement learning agents trained in a more complex environment. The focus of these experiments was on finding optimal hyperparameters for effective training. The folder includes:
+에이전트 수행 영상, 학습된 Q-값, 보상 그래프가 포함되어 있습니다.
 
-- **Hyperparameter Comparisons**: Plots showing the effect of different hyperparameter settings and episode counts.
-- **Performance Videos**: Visual demonstration of agent behavior when using optimal configurations.
-- **Q-Values**: Information on how the Q-values evolved during training.
+보상 그래프는 다양한 하이퍼파라미터와 에피소드 수에 따른 최적 구성을 비교하여 보여줍니다.
 
-### Code
-The **code** folder provides all the scripts used in these experiments, including those for:
+code/
 
-- **Environment Wrappers**: Custom wrappers to modify the environments.
-- **SARSA and Q-Learning**: Implementations of both SARSA and Q-learning algorithms for training agents in the MiniGrid environments.
+모든 실험에 사용된 소스 코드가 포함되어 있습니다.
 
-## Usage
-To explore the results:
-1. **Navigate** to the respective folders (`empty_6x6/` or `crossing/`) to see the outcomes from each environment.
-2. **Run the Code**: You can use the scripts in the `code/` folder to reproduce the experiments or modify the settings for further exploration.
+각 환경 및 실험 설정에 대한 개별 Python 스크립트가 있으며, SARSA와 Q-learning 구현이 포함되어 있습니다.
 
-Feel free to contribute by suggesting improvements, running new experiments, or submitting pull requests!
+내용 개요
 
+Empty 6x6 환경
+
+empty_6x6 폴더에는 다양한 에피소드 수를 사용하여 학습된 강화 학습 에이전트의 시각적 및 수치적 결과가 포함되어 있습니다. 이를 통해 에이전트의 성능이 시간이 지남에 따라 어떻게 발전하는지 비교할 수 있습니다. 다음과 같은 내용이 포함되어 있습니다:
+
+에피소드 보상 그래프: 에피소드가 진행됨에 따라 보상이 어떻게 변화하는지 보여주는 그래프입니다.
+
+수행 영상: 에이전트의 학습된 행동을 시연한 영상입니다.
+
+Q-값: 에이전트의 의사결정 과정을 이해할 수 있도록 학습된 Q-값을 제공합니다.
+
+Crossing 환경
+
+crossing 폴더에는 보다 복잡한 환경에서 학습된 강화 학습 에이전트의 결과가 포함되어 있습니다. 이 실험의 초점은 효과적인 학습을 위한 최적의 하이퍼파라미터를 찾는 것이었습니다. 폴더에는 다음과 같은 내용이 포함되어 있습니다:
+
+하이퍼파라미터 비교: 다양한 하이퍼파라미터 설정 및 에피소드 수의 영향을 보여주는 그래프입니다.
+
+수행 영상: 최적의 설정을 사용했을 때의 에이전트 행동을 시연한 영상입니다.
+
+Q-값: 학습 중 Q-값이 어떻게 발전했는지에 대한 정보입니다.
+
+코드
+
+code 폴더에는 이러한 실험에 사용된 모든 스크립트가 포함되어 있으며, 다음과 같은 내용이 있습니다:
+
+환경 래퍼: 환경을 수정하기 위한 커스텀 래퍼입니다.
+
+SARSA와 Q-learning: MiniGrid 환경에서 에이전트를 학습시키기 위한 SARSA와 Q-learning 알고리즘의 구현이 포함되어 있습니다.
+
+사용 방법
+
+결과를 탐색하려면:
+
+각각의 폴더 (empty_6x6/ 또는 crossing/)로 이동하여 각 환경의 결과를 확인하세요.
+
+코드 실행: code/ 폴더에 있는 스크립트를 사용하여 실험을 재현하거나 설정을 수정하여 추가 탐구를 진행할 수 있습니다.
+
+개선 사항 제안, 새로운 실험 실행, 또는 풀 리퀘스트 제출을 통해 자유롭게 기여해 주세요!
