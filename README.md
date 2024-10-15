@@ -1,5 +1,5 @@
 # Reinforcement Learning Results and Code Overview
- **MiniGrid-Empty-6x6**과 **MiniGrid-Crossing** 두 환경에서 수행된 강화 학습 실험의 결과와 코드가 포함되어 있습니다. 결과는 각 작업(task)별로 정리되어 있습니다.
+ **MiniGrid-Empty-6x6**과 **MiniGrid-Crossing** 두 환경에서 수행된 강화 학습 실험의 결과와 코드가 포함되어 있습니다. 결과는 각 작업(task)별로 정리했습니다.
 
 
 ## Repository Structure
